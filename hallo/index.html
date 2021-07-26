@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Css Local -->
+    <link rel="stylesheet" href="index.css">
+    <!-- JavaScript W3School Buat Slide Next -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+  <script>
+  // Ini Fungsi buat nyalain lagunya
+    function putarlagu() {
+      rex.play()
+    }
+
+// Nah ini fungsi Jamnya
+const run = setInterval(function() {
+
+  // Var Jam, Menit, Detik.
+  let detik = new Date().getSeconds();
+  let menit = new Date().getMinutes();
+  let jam = new Date().getHours();
+
+  // Pemanggilan Jam ke dalam Html
+  const vjam = document.getElementById('jjam');
+  vjam.innerHTML = `${jam}` + " : " + `${menit}` + " : " + `${detik}` ;
+
+  //Jika Lebih Dari Jam 6 && Kurang dari Jam 23
+  if (jam >= 18 && jam <= 23) {
+      document.getElementById("sahur").innerHTML = "Selamat Malam, Kamu";
+  }
+  //Jika Jam 3
+  else if (jam == 1) {
+     document.getElementById("sahur").innerHTML = "Mau tahajud?";
+  }
+  //Jika Lebih Dari Jam 1 && Kurang dari jam 18
+  else if ( jam >= 1 && jam <= 18 ) {
+     document.getElementById("sahur").innerHTML = "Selamat Malam";
+  }
+    
+}, 1000);
+// Akhir Dari Fungsi Jam
+  </script>
+
+  <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <title>Hallo :D</title>
+  </head>
+  <body>
+  
+  <div class="row">
+    <!-- Gambarnya -->
+    <div class="col-6">
+      <img src="img/sahur.png" id="ilustrasi" alt="">
+    </div>
+    <!-- Dari Sini Mulai Percakapannya -->
+    <div class="col-6 nature">
+      <h3 class="font">Hallo Maulani</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">I hope you are fine</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">Coba play music na</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+      <audio id="myAudio">
+  <source src="https://raw.githubusercontent.com/mzr-d3bz/blekhet/master/4u_ika.mp3" type="audio/mpeg">
+</audio>
+<button onclick="playAudio(); changeBodyBg();" type="button">Putar Lagu</button>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+</script> 
+      <!-- <button type="button" class="btn btn-outline-primary putar1" onclick="putarlagu()">Putar Lagu</button> -->
+
+      
+    </div>
+    
+        <div class="col-6 nature">
+      <h3 class="font">Ntos di play lagu na? Enak teuu? Eta lagu sebagian anu direkomenkeun ku maull. Terus sesa na ku mizar di tambahkeun lagu mih sambil chill.</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">By the way I made this for you.</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">This is Me.</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+    <div class="col-6 nature">
+      <h3 class="font">But in virtual form.
+</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Keren teu ? :D </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Hmmm naon deui nya bingung</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Ieu sanes nanaon, iseng weh ngadamel nu kieu </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Oh enya ieu duka naon guna na , Teu aya guna na siganamh </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Ieu bakal aktif 24Jam ul, kecuali lamun ku mizar dihapus. Tapi da moal bakal dihapus.</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Sabenernamh ieu th beres sahari ge pas maul ngabikin kos kieu ge</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Cuman waktu jang ngaupload na kahambat ku game jadi weh lami hehe, maap coy</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Oh enya, maap chat na teu dibales. Alesanna? nu pasti karna game. Saking rame na eta game jadi hilap bales chat. </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+    </div>
+<div class="col-6 nature">
+      <h3 class="font"> Chattan teu kudu unggal poe oge kan? </h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Terus ieu th sami jeung kos maul</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Cuman ku mizar dimodif, ditambah background polos, gambar, jam, jeung ditambahan ku music. Konsep namh sama</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+      
+    </div>
+<div class="col-6 nature">
+      <h3 class="font">Teu aya nanaon deui, teu aya pesan tambahan deui cuman sakitu weh</h3>
+      <br>
+      <button type="button" class="btn btn-primary" onclick="myShow.next()">Next Words</button>
+    </div>
+
+<div class="col-6 nature">
+      <h3 class="font">Btw nuhun tos maca sampe selsai , nikmati weh lagu na. Anggap kos radio</h3>
+      <br>
+
+      
+    </div>
+
+  </div>
+
+  <div class="row">
+      <div class="col">
+        <div id="jam">
+          <div id="hour">
+            <h2 id="jjam" class="font-jam"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Akhir Dari Percakapan -->
+  
+    <!-- Lagunya bebas Kalian Ganti, gantinya di sini ya -->
+      <audio src="/lagu/ampyx-rise.mp3" id="rex"></audio>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      myShow = w3.slideshow(".nature", 0);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
